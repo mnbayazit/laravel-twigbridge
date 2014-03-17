@@ -35,7 +35,6 @@ class StaticCaller {
 
         $result = forward_static_call_array([$this->className, $method], $arguments);
 
-        return $is_safe ? new \Twig_Markup($result, $this->options['charset']) : $result;
-
+        return $is_safe && (is_string($result) || method_exists($result, '__toString')) ? new \Twig_Markup($result, $this->options['charset']) : $result;
     }
 }
