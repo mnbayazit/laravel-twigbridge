@@ -1,17 +1,17 @@
-<?php namespace Barryvdh\TwigBridge;
+<?php namespace mnbayazit\TwigBridge;
 
-use Barryvdh\TwigBridge\Console\ClearCommand;
-use Barryvdh\TwigBridge\Extension\AuthExtension;
-use Barryvdh\TwigBridge\Extension\ConfigExtension;
-use Barryvdh\TwigBridge\Extension\FacadeExtension;
-use Barryvdh\TwigBridge\Extension\FormExtension;
-use Barryvdh\TwigBridge\Extension\HelperExtension;
-use Barryvdh\TwigBridge\Extension\HtmlExtension;
-use Barryvdh\TwigBridge\Extension\SessionExtension;
-use Barryvdh\TwigBridge\Extension\StringExtension;
-use Barryvdh\TwigBridge\Extension\TranslatorExtension;
-use Barryvdh\TwigBridge\Extension\UrlExtension;
-use Barryvdh\TwigBridge\Loader\ChainLoader;
+use mnbayazit\TwigBridge\Console\ClearCommand;
+use mnbayazit\TwigBridge\Extension\AuthExtension;
+use mnbayazit\TwigBridge\Extension\ConfigExtension;
+use mnbayazit\TwigBridge\Extension\FacadeExtension;
+use mnbayazit\TwigBridge\Extension\FormExtension;
+use mnbayazit\TwigBridge\Extension\HelperExtension;
+use mnbayazit\TwigBridge\Extension\HtmlExtension;
+use mnbayazit\TwigBridge\Extension\SessionExtension;
+use mnbayazit\TwigBridge\Extension\StringExtension;
+use mnbayazit\TwigBridge\Extension\TranslatorExtension;
+use mnbayazit\TwigBridge\Extension\UrlExtension;
+use mnbayazit\TwigBridge\Loader\ChainLoader;
 
 /**
  * Twig integration for Laravel 4
@@ -48,7 +48,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider {
                     array(
                         'debug' => $app['config']['app.debug'],
                         'cache' => $app['path.storage'].'/views/twig',
-                        'base_template_class' => 'Barryvdh\TwigBridge\TwigTemplate',
+                        'base_template_class' => 'mnbayazit\TwigBridge\TwigTemplate',
                     ),
                     $app['config']->get('laravel-twigbridge::config.options', array()),
                     $app['twig.options']
@@ -160,7 +160,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider {
 
         $app = $this->app;
 
-        $this->package('barryvdh/laravel-twigbridge');
+        $this->package('mnbayazit/laravel-twigbridge');
         $extension = $app['config']->get('laravel-twigbridge::config.extension', 'twig');
 
         // Register the view engine:

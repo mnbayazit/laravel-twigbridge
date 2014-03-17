@@ -1,6 +1,6 @@
 <?php
 
-namespace Barryvdh\TwigBridge\Loader;
+namespace mnbayazit\TwigBridge\Loader;
 
 use Twig_Loader_Chain;
 use Twig_Error_Loader;

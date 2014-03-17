@@ -1,5 +1,5 @@
 <?php
-namespace Barryvdh\TwigBridge\Loader;
+namespace mnbayazit\TwigBridge\Loader;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\View\ViewFinderInterface;

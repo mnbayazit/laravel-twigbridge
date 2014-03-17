@@ -1,8 +1,8 @@
 <?php
 
-namespace Barryvdh\TwigBridge;
+namespace mnbayazit\TwigBridge;
 
-use Barryvdh\TwigBridge\Loader\FilenameLoaderInterface;
+use mnbayazit\TwigBridge\Loader\FilenameLoaderInterface;
 use Illuminate\View\View;
 use Twig_Error;
 use Twig_Error_Loader;

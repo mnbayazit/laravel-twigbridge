@@ -1,10 +1,10 @@
 <?php
 
-namespace Barryvdh\TwigBridge\Tests\Loader;
+namespace mnbayazit\TwigBridge\Tests\Loader;
 
 use Mockery as m;
-use Barryvdh\TwigBridge\TwigEngine;
-use Barryvdh\TwigBridge\Loader\ViewfinderLoader;
+use mnbayazit\TwigBridge\TwigEngine;
+use mnbayazit\TwigBridge\Loader\ViewfinderLoader;
 
 class ViewfinderLoaderTest extends \PHPUnit_Framework_TestCase
 {

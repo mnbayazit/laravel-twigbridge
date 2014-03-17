@@ -6,26 +6,26 @@ This packages adds Twig as a Laravel Template Engine:
 * Supports creator/composer events
 * Easily add helpers/filters (`{{ url('/') }}` or `{{ 'someThing' | snake_case }}`)
 * Can call Facades (`{{ MyModel.to('/') }}`)
-* Can be integrated with Assetic (https://github.com/barryvdh/laravel-assetic)
+* Can be integrated with Assetic (https://github.com/mnbayazit/laravel-assetic)
 * Default extensions for easier use.
 
 See http://twig.sensiolabs.org/ for more info about Twig Templating
     
 ### Install
-Require this package in your composer.json and run composer update (or run `composer require barryvdh/laravel-twigbridge:dev-master` directly):
+Require this package in your composer.json and run composer update (or run `composer require mnbayazit/laravel-twigbridge:dev-master` directly):
 
-    "barryvdh/laravel-twigbridge": "dev-master"
+    "mnbayazit/laravel-twigbridge": "dev-master"
 
 After updating composer, add the ServiceProvider to the providers array in app/config/app.php
 
 ```php
-'Barryvdh\TwigBridge\ServiceProvider',
+'mnbayazit\TwigBridge\ServiceProvider',
 ```
 
 You can add the Twig Facade to have easy access to Twig_Environment, ie. `Twig::render('template.twig')`.
 
 ```php
-'Twig' => 'Barryvdh\TwigBridge\Twig',
+'Twig' => 'mnbayazit\TwigBridge\Twig',
 ```
 
 ### Usage
@@ -77,7 +77,7 @@ Global variables:
 To publish a configuration file, you can run the following command:
 
 ```
-$ php artisan config:publish barryvdh/laravel-twigbridge
+$ php artisan config:publish mnbayazit/laravel-twigbridge
 ```
 
 Change your config to choose what helpers/filters you want to use, and what Facades to register. You can also pass in a callback or array to define options.

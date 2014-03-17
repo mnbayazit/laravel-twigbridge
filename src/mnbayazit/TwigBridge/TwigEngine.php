@@ -1,5 +1,5 @@
 <?php
-namespace Barryvdh\TwigBridge;
+namespace mnbayazit\TwigBridge;
 
 use Illuminate\View\Engines\EngineInterface;
 use Twig_Environment;

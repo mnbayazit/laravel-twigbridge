@@ -16,7 +16,7 @@ return array(
   |   * charset: The charset used by the templates (default to UTF-8).
   |
   |   * base_template_class: The base template class to use for generated
-  |                         templates (default to Barryvdh\TwigBridge\TwigTemplate).
+  |                         templates (default to mnbayazit\TwigBridge\TwigTemplate).
   |
   |   * cache: An absolute path where to store the compiled templates, or
   |           false to disable compilation cache. Default to storage_path('views/twig')
@@ -42,7 +42,7 @@ return array(
     'options' => array(
         'debug'                 => Config::get('app.debug'),
         'charset'               => 'UTF-8',
-        'base_template_class'   => 'Barryvdh\TwigBridge\TwigTemplate',
+        'base_template_class'   => 'mnbayazit\TwigBridge\TwigTemplate',
         'auto_reload'           => null,
         'cache'                 => storage_path('views/twig'),
         'strict_variables'      => true,

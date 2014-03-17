@@ -1,5 +1,5 @@
 <?php
-namespace Barryvdh\TwigBridge\Extension;
+namespace mnbayazit\TwigBridge\Extension;
 
 use  Illuminate\Html\HtmlBuilder;
 use  Illuminate\Support\Str;

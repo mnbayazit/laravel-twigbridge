@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\TwigBridge\Console;
+<?php namespace mnbayazit\TwigBridge\Console;
 
 use Illuminate\Console\Command;
 use Twig_Environment;

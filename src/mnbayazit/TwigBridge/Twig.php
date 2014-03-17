@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\TwigBridge;
+<?php namespace mnbayazit\TwigBridge;
 
 use Illuminate\Support\Facades\Facade;
 

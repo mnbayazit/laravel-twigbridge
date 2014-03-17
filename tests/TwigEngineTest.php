@@ -1,8 +1,8 @@
 <?php
 
-namespace Barryvdh\TwigBridge\Tests;
+namespace mnbayazit\TwigBridge\Tests;
 
-use Barryvdh\TwigBridge\TwigEngine;
+use mnbayazit\TwigBridge\TwigEngine;
 
 class TwigEngineTest extends \PHPUnit_Framework_TestCase
 {
